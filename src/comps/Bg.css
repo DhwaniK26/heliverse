@@ -1,0 +1,255 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-blend-mode: normal;
+   
+}
+
+.main-div{
+    background-color: rgb(2, 2, 24);
+}
+
+.ccontainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: black;
+    overflow: hidden;
+    animation: animateColor 5s linear infinite ;
+    background-blend-mode:unset
+}
+
+@keyframes animateColor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.ccontainer span{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-blend-mode: normal
+    
+}
+
+.ccontainer span::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow:0 0 10px rgb(10, 56, 38), 
+    0 0 20px rgb(134, 184, 134),
+    0 0 40px rgb(134, 184, 134),
+    0 0 60px rgb(134, 184, 134),
+    0 0 90px rgb(134, 184, 134),
+    0 0 100px rgb(134, 184, 134);
+    background: green;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: scale(0);
+    background-blend-mode: normal
+}
+
+.ccontainer span:hover::before{
+    transition: 0s;
+    transform: scale(1);
+}
+
+.relative {
+    height: 55px;
+    width: 100%;
+    background-color: #262626;
+    position: relative;
+    filter: none;
+    animation: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.stopped-animation {
+    animation: none !important;
+}
+
+.relative img {
+    width: 50px; /* Adjust as needed */
+    height: 47px; /* Adjust as needed */
+    filter: none; /* Ensure image is not affected by hue-rotate */
+    margin-top: 0;
+}
+
+
+
+.sora-hell {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 23px;
+  color: rgb(107, 184, 5); 
+}
+
+.en-div{
+    margin-top:6px;
+}
+
+.mar-div{
+    margin-top:9px;
+}
+
+.outfit-main {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 469;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.buy-div{
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    padding: 2px;
+    
+    background-color: rgb(107, 184, 5); 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 95px;
+    height: 35px;
+}
+
+.motion-img{
+  
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.motion-img img{
+    filter: none; /* Ensure image is not affected by hue-rotate */
+    position: relative; /* Ensure it's not affected by parent's position properties */
+    z-index: 1
+}
+
+.soratrans{
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    font-size: 17px;
+    background:linear-gradient(45deg, #e07606, #5f0ea7, rgb(11, 39, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+     
+}
+.pur-btn{
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+   
+    margin-right: 70px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-top: 80px;
+
+}
+
+.attract-txt{
+    font-size: 65px;
+    font-weight: 230px;
+    color: white;
+    margin-top: -20px;
+   
+}
+
+
+.attract-div{
+    width: 100%;
+    
+}
+
+.motionart{
+    background: linear-gradient(45deg, #e07606, #5f0ea7, rgb(11, 39, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 90px;
+     
+}
+
+.turn-text{
+    color: white;
+    font-size: 45px;
+    font-weight: 80px;
+
+}
+
+.purchase-btn{
+     background: linear-gradient(45deg, #ff6b6b, #cc5de8, rgb(79, 7, 138));
+     font-size: 20px;
+     color: white;
+     border-radius: 13px;
+}
+
+.apply-text{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+.footer{
+    height: 60px;
+    width: 100%;
+    background:linear-gradient(45deg, #ff6b6b, #cc5de8, rgb(79, 7, 138)); ;
+}
+@media screen and (max-width: 600px) {
+    .sora-hell {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 17px;
+        color: rgb(136, 243, 94);
+      }
+      .outfit-main {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 469;
+        font-style: normal;
+        font-size: 18px;
+      }
+
+      .en-div{
+        margin-top:8px;
+    }
+    
+    .mar-div{
+        margin-top:10px;
+    }
+
+    .relative img {
+        width: 40px; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        filter: none; /* Ensure image is not affected by hue-rotate */
+        margin-top: 0;
+    }
+  }
